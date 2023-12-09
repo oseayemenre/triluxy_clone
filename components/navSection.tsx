@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function NavSection({
   label,
@@ -13,14 +15,27 @@ export default function NavSection({
 
   return (
     <div
-      className='cursor-pointer hover:text-[#6ccacb]'
+      className='cursor-pointer relative text-[#0D233E]'
       onMouseOver={() => setToggle(true)}
       onMouseLeave={() => setToggle(false)}
     >
-      <p>{label}</p>
+      <div className='flex items-center gap-x-1'>
+        <p className='hover:text-[#6ccacb]'>{label}</p>
+        {subitems && <IoIosArrowDown size={13} color='#5D646D' />}
+      </div>
 
-      {toggle &&
-        subitems?.map((items: string, index: number) => <p>{items}</p>)}
+      {toggle && subitems && (
+        <motion.div
+          initial={{ rotateX: "-90deg" }}
+          animate={{ rotateX: 0 }}
+          transition={{ duration: 0.3 }}
+          className='absolute top-12 w-[170px] px-5 flex flex-col gap-y-2 rounded-md py-4 bg-white text-[15px] shadow-[0_-2px_10px_1px_rgba(0,0,0,0.3)]'
+        >
+          {subitems?.map((items: string, index: number) => (
+            <p key={index}>{items}</p>
+          ))}
+        </motion.div>
+      )}
     </div>
   );
 }
