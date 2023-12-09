@@ -29,3 +29,17 @@ export const nav_items = [
   },
   { label: "Become Local Expert" },
 ];
+
+export const button_labels = [
+  {
+    label: "Sign Up",
+    bgColor: "white",
+    borderColor: "#6CCACB",
+    textColor: "#6CCACB",
+  },
+  {
+    label: "Login",
+    bgColor: "#6CCACB",
+    textColor: "#FFFFFF",
+  },
+];
