@@ -34,12 +34,12 @@ export default function Header() {
   return (
     <div className='w-full border-b-[1px] border-b-[#d4d9e05b] py-[5px] pl-[15px] pr-8 flex justify-between items-center text-[#0D233E] text-[14px]'>
       <div className='flex items-center gap-x-4 mb-1'>
-        <div className='flex items-center gap-x-[6px]'>
+        <div className='flex items-center gap-x-[6px] cursor-pointer'>
           <FiPhone size={12} className='mb-[1px]' />
           <p className='text-[14px]'>+234 813 264 0130</p>
         </div>
 
-        <div className='flex items-center gap-x-[6px]'>
+        <div className='flex items-center gap-x-[6px] cursor-pointer'>
           <CiMail size={13} />
           <p>info@triluxy.com</p>
         </div>
