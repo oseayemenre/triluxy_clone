@@ -6,7 +6,7 @@ type items = (typeof nav_items)[number];
 
 export default function NavBar() {
   return (
-    <div className='pr-8 pl-[15px] flex justify-between '>
+    <nav className='px-[15px] flex justify-between '>
       <Image
         src='/triluxy_logo.png'
         width={90}
@@ -25,6 +25,6 @@ export default function NavBar() {
           {nav_items[6].label}
         </button>
       </div>
-    </div>
+    </nav>
   );
 }

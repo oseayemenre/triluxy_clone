@@ -32,7 +32,7 @@ export default function Header() {
   }
 
   return (
-    <div className='w-full border-b-[1px] border-b-[#d4d9e05b] py-[5px] pl-[15px] pr-8 flex justify-between items-center text-[#0D233E] text-[14px]'>
+    <div className='w-full border-b-[1px] border-b-[#d4d9e05b] py-[5px] px-[15px] flex justify-between items-center text-[#0D233E] text-[14px]'>
       <div className='flex items-center gap-x-4 mb-1'>
         <div className='flex items-center gap-x-[6px] cursor-pointer'>
           <FiPhone size={12} className='mb-[1px]' />
