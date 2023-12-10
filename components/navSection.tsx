@@ -19,9 +19,11 @@ export default function NavSection({
       onMouseOver={() => setToggle(true)}
       onMouseLeave={() => setToggle(false)}
     >
-      <div className='flex items-center gap-x-1'>
+      <div className='flex items-center text-[16.21px]'>
         <p>{label}</p>
-        {subitems && <IoIosArrowDown size={13} color='#5D646D' />}
+        {subitems && (
+          <IoIosArrowDown size={13} color='#5D646D' className='mt-1' />
+        )}
       </div>
 
       {toggle && subitems && (
