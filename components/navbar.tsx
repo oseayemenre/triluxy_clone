@@ -7,7 +7,13 @@ type items = (typeof nav_items)[number];
 export default function NavBar() {
   return (
     <div className='pr-8 pl-[15px] flex justify-between '>
-      <Image src='/triluxy_logo.png' width={90} height={77.01} alt='Logo' />
+      <Image
+        src='/triluxy_logo.png'
+        width={90}
+        height={77.01}
+        alt='Logo'
+        priority
+      />
       <div className='flex items-center gap-x-[27px]'>
         <div className='flex gap-x-[27px] items-center mt-[1px]'>
           {nav_items.slice(0, 6).map((items: items, i: number) => (

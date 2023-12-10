@@ -83,59 +83,59 @@ export const currencies = [
 export const countries = [
   {
     name: "Bahasa Indonesia",
-    flag: "",
+    flag: "/indonesia.png",
   },
   {
     name: "Deutsch",
-    flag: "",
+    flag: "/germany.png",
   },
   {
     name: "English(US)",
-    flag: "",
+    flag: "/united-states.png",
   },
   {
     name: "English(UK)",
-    flag: "",
+    flag: "/united-kingdom.png",
   },
   {
-    name: "Romania(UK)",
-    flag: "",
+    name: "Romania",
+    flag: "/romania.png",
   },
   {
-    name: "Espanol",
-    flag: "",
+    name: "Español",
+    flag: "spain.png",
   },
   {
     name: "Francais",
-    flag: "",
+    flag: "/france.png",
   },
   {
     name: "Italanio",
-    flag: "",
+    flag: "/italy.png",
   },
   {
     name: "Polski",
-    flag: "",
+    flag: "/poland.png",
   },
   {
     name: "Portugese",
-    flag: "",
+    flag: "/portugal.png",
   },
   {
     name: "Turkish",
-    flag: "",
+    flag: "/turkey.png",
   },
   {
     name: "Russian",
-    flag: "",
+    flag: "/russia.png",
   },
   {
     name: "Japanese",
-    flag: "",
+    flag: "/japan.png",
   },
   {
     name: "Mandarin",
-    flag: "",
+    flag: "/china.png",
   },
   {
     name: "Mandarin Chinese",
@@ -143,10 +143,10 @@ export const countries = [
   },
   {
     name: "Korean",
-    flag: "",
+    flag: "/korea.png",
   },
   {
     name: "Hindi",
-    flag: "",
+    flag: "/india.png",
   },
 ];
