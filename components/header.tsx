@@ -126,7 +126,7 @@ export default function Header() {
       </div>
       <div className='flex justify-center lg:hidden'>
         <button
-          className='w-[30px] h-[22px] bg-[#8089961A] flex justify-center items-center focus:outline-none hover:bg-[#6CCACB] transition ease duration-300 hover:text-white'
+          className='w-[30px] h-[22px] bg-[#8089961A] flex justify-center items-center focus:outline-none hover:bg-[#6CCACB] transition ease duration-300 hover:text-white rounded-b-md'
           onClick={() => setRotate(!rotate)}
         >
           <MdKeyboardArrowDown

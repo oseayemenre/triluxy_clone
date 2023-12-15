@@ -22,7 +22,7 @@ export default function NavBar() {
         priority
       />
 
-      <div className='lg:hidden w-[40px] h-[40px] flex items-center justify-center bg-[#8089961A] cursor-pointer'>
+      <div className='lg:hidden w-[40px] h-[40px] flex items-center justify-center bg-[#8089961A] cursor-pointer rounded-md'>
         {showMobile ? (
           <div>
             <IoMdClose
