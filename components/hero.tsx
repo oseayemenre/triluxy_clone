@@ -21,8 +21,8 @@ export default function Hero() {
 
       <div className='w-[1500px] h-[800px] rounded-b-[50%] absolute bg-[#0D233E] -left-20 opacity-[0.70] max-lg:w-[1000px] max-lg:-left-[100px] max-md:w-[600px] max-md:-left-[110px]' />
 
-      <div className='absolute w-full flex justify-center -left-[150px] items-center h-full'>
-        <h1 className='text-[50px] font-[600] text-white'>
+      <div className='absolute w-full flex justify-center -left-[150px] items-center h-full max-lg:left-0 max-lg:px-[15px]'>
+        <h1 className='text-[50px] font-[600] text-white max-lg:text-[32px]'>
           Amazing{" "}
           <motion.span
             initial={{ scale: 1.2 }}
