@@ -64,7 +64,7 @@ export default function Header() {
             <IoIosArrowDown size={13.7} className='mt-1' />
 
             {toggleCountry && (
-              <div className='h-[192px] w-[175px] bg-white border-[1px] overflow-y-scroll absolute top-[31px] rounded-[4px] z-10 flex flex-col gap-y-[6px] '>
+              <div className='h-[192px] w-[175px] bg-white border-[1px] overflow-y-scroll absolute top-[31px] rounded-[4px] z-10 flex flex-col gap-y-[6px] max-lg:top-[33px]'>
                 {countries.map((Country: Tcountry, index: number) => {
                   return (
                     <div
@@ -97,7 +97,7 @@ export default function Header() {
             <IoIosArrowDown size={13.7} className='mt-1' />
 
             {toggleCurrency && (
-              <div className='h-[192px] w-[90px] bg-white border-[1px] overflow-y-scroll absolute top-[46px] rounded-[4px] z-10 flex flex-col gap-y-[6px] max-lg:top-[85px]'>
+              <div className='h-[192px] w-[90px] bg-white border-[1px] overflow-y-scroll absolute top-[46px] rounded-[4px] z-10 flex flex-col gap-y-[6px] max-lg:top-[90px]'>
                 {currencies.map((currencies: string, index: number) => {
                   return (
                     <div
