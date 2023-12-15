@@ -8,7 +8,7 @@ export default function Hero() {
   const { title } = useTitleChange();
   return (
     <section className='relative overflow-x-hidden h-[800px]'>
-      <div className='w-[1500px] bg-red-800 h-[800px] absolute -left-20 max-lg:w-[1000px] max-lg:-left-[100px] max-md:w-[600px] max-md:-left-[110px]'>
+      <div className='w-[1500px]  h-[800px] absolute -left-20 max-lg:w-[1000px] max-lg:-left-[100px] max-md:w-[600px] max-md:-left-[110px]'>
         <Image
           src='/island_2.jpg'
           width={3000}
