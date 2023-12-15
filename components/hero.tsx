@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import useTitleChange from "@/hooks/useTitleChange";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const { title } = useTitleChange();
@@ -20,7 +23,18 @@ export default function Hero() {
 
       <div className='absolute w-full flex justify-center -left-[150px] items-center h-full'>
         <h1 className='text-[50px] font-[600] text-white'>
-          Amazing {title} Waiting for You
+          Amazing{" "}
+          <motion.span
+            initial={{ scale: 1.2 }}
+            animate={{ scale: 1 }}
+            transition={{
+              duration: 0.5,
+              ease: "linear",
+            }}
+          >
+            {title}{" "}
+          </motion.span>
+          Waiting for You
         </h1>
       </div>
     </section>
