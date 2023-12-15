@@ -25,7 +25,7 @@ export default function useTitleChange() {
       if (index > 8) {
         index = 0;
       }
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(loop);
   }, []);
