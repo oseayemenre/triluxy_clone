@@ -13,7 +13,7 @@ type items = (typeof nav_items)[number];
 export default function NavBar() {
   const [showMobile, setShowMobile] = useState(false);
   return (
-    <nav className='px-[15px] flex justify-between items-center max-lg:pb-[15px]'>
+    <nav className='px-[15px] flex justify-between items-center max-lg:pb-[15px] relative'>
       <Image
         src='/triluxy_logo.png'
         width={90}
@@ -22,7 +22,7 @@ export default function NavBar() {
         priority
       />
 
-      <div className='lg:hidden w-[40px] h-[40px] flex items-center justify-center bg-[#8089961A]'>
+      <div className='lg:hidden w-[40px] h-[40px] flex items-center justify-center bg-[#8089961A] cursor-pointer'>
         {showMobile ? (
           <div>
             <IoMdClose
