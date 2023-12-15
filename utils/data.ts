@@ -1,3 +1,7 @@
+import { LiaPlaneSolid } from "react-icons/lia";
+import { IoBedOutline, IoCarSportOutline, IoEarthSharp } from "react-icons/io5";
+import { LuShip } from "react-icons/lu";
+
 export const nav_items = [
   {
     label: "Flights",
@@ -150,3 +154,26 @@ export const countries = [
     flag: "/india.png",
   },
 ];
+
+export const hero_options = [
+  {
+    label: "Flights",
+    icon: LiaPlaneSolid,
+  },
+  {
+    label: "Hotels",
+    icon: IoBedOutline,
+  },
+  {
+    label: "Cars",
+    icon: IoCarSportOutline,
+  },
+  {
+    label: "Cruises",
+    icon: LuShip,
+  },
+  {
+    label: "Attractions",
+    icon: IoEarthSharp,
+  },
+] as const;
