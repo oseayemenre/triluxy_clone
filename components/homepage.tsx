@@ -22,8 +22,8 @@ export default function HomePage() {
 
   return (
     <main>
-      {loading ? (
-        <AnimatePresence>
+      <AnimatePresence mode='wait'>
+        {loading && (
           <motion.div
             exit={{ opacity: 0 }}
             transition={{
@@ -39,24 +39,23 @@ export default function HomePage() {
               <LuLoader2 size={75} color='#6CCACB' />
             </motion.div>
           </motion.div>
-        </AnimatePresence>
-      ) : (
-        <main>
-          <Header />
-          <NavBar />
-          <Hero />
-          <BlobsSection />
-          <FlightDestination />
-          <HotelDestination />
-          <VisitedPlaces />
-          <CarRentals />
-          <Testimonials />
-          <CTA />
-          <RelatedArticles />
-          <App />
-          <Footer />
-        </main>
-      )}
+        )}
+      </AnimatePresence>
+      <main>
+        <Header />
+        <NavBar />
+        <Hero />
+        <BlobsSection />
+        <FlightDestination />
+        <HotelDestination />
+        <VisitedPlaces />
+        <CarRentals />
+        <Testimonials />
+        <CTA />
+        <RelatedArticles />
+        <App />
+        <Footer />
+      </main>
     </main>
   );
 }

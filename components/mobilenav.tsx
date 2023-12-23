@@ -27,7 +27,12 @@ export default function MobileNav() {
           {items.subItems ? (
             <div>
               <div className='flex justify-between relative items-center'>
-                <p className='hover:text-[#6ccacb] text-[#0D233E]'>
+                <p
+                  className={`${
+                    active === items.label ? "text-[#6ccacb]" : "text-[#0D233E]"
+                  }`}
+                  onClick={() => setActive(items.label)}
+                >
                   {items.label}
                 </p>
                 <div
@@ -52,7 +57,14 @@ export default function MobileNav() {
               )}
             </div>
           ) : (
-            <p className='hover:text-[#6ccacb]'>{items.label}</p>
+            <p
+              className={`${
+                active === items.label ? "text-[#6ccacb]" : "text-[#0D233E]"
+              }`}
+              onClick={() => setActive(items.label)}
+            >
+              {items.label}
+            </p>
           )}
         </div>
       ))}

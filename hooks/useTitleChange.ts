@@ -22,7 +22,7 @@ export default function useTitleChange() {
       setTitle(activities[index + 1]);
       index++;
 
-      if (index > 7) {
+      if (index > activities.length - 2) {
         index = -1;
       }
     }, 2000);

@@ -25,7 +25,7 @@ export default function Button({
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`border-[1px]  px-[15.7px] py-[7.5px] font-[600] rounded-[4px] focus:outline-none duration-150 ease transition`}
+      className='border-[1px]  px-[15.7px] py-[7.5px] font-[600] rounded-[4px] focus:outline-none duration-150 ease transition'
     >
       {label}
     </button>
